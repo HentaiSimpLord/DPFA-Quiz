@@ -10,32 +10,63 @@
 * {
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+    font-weight: 1000;
     color: var(--text-color);
 
     /* debug */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
-h1 {
+
+/* Classes */
+.centerd-text {
     text-align: center;
 }
 
-#buttons {
+.centerd {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 
+.boxed {
+    border: .2rem solid var(--second-color);
+    border-radius: 2rem;
+    width: max-content;
+    padding: 1rem;
+
+    background-color: var(--main-color);
+}
+
+
+/* Objects */
 button {
     border: 0px;
     font-size: 1rem;
     padding: 0.5rem;
     border-radius: .3rem;
 
-    background-color: var(--second-color);
+    background-color: var(--main-color);
     box-shadow: .1rem .1rem rgba(0, 0, 0, 0.2);
 }
+
+h1 {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+
+/* Interaktiv */
+button:hover {
+    background-color: var(--second-color);
+}
+
 
 /* Fonts */
 @font-face {
