@@ -1,0 +1,46 @@
+:root {
+    --background-color: #fff;
+    --main-color: #00bcd4;
+    --second-color: #0097a7;
+    --text-color: #333;
+    --positiv-color: #4caf50;
+    --negativ-color: #f44336;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color)
+
+    /* debug */
+    /* border: 1px solid red; */
+}
+
+h1 {
+    text-align: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    border: 0px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: .3rem;
+
+    background-color: var(--second-color);
+    box-shadow: .1rem .1rem rgba(0, 0, 0, 0.2);
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito/Nunito-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
